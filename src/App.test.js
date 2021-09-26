@@ -1,6 +1,6 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
-import App from "./App";
+import App, { calcularNuevoSaldo } from "./App";
 
 describe("Componente principal", () => {
   describe("Cuando la aplicación se inicializa", () => {
@@ -16,6 +16,18 @@ describe("Componente principal", () => {
     it("Muestra el boton para realizar una transacción", () => {
       render(<App />);
       expect(screen.getByText("Realizar operación")).toBeInTheDocument();
+    });
+  });
+  describe("Cuando el usuario realiza una operación", () => {
+    it("De tipo retiro debe disminuir el saldo", () => {
+      const transaccion = {
+        transaccion: "retiro",
+        valor: 200,
+      };
+
+      const nuevosaldo = calcularNuevoSaldo(transaccion, 1000);
+
+      expect(nuevosaldo).toBe(800);
     });
   });
 });
