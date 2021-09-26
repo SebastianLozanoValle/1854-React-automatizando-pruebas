@@ -23,9 +23,33 @@
     },
     {
       "transaccion": "retiro",
-      "valor": "100",
+      "valor": 0,
       "data": "25/9/2021",
       "id": 4
+    },
+    {
+      "transaccion": "retiro",
+      "valor": "100",
+      "data": "25/9/2021",
+      "id": 5
+    },
+    {
+      "transaccion": "retiro",
+      "valor": "100",
+      "data": "25/9/2021",
+      "id": 6
+    },
+    {
+      "transaccion": "retiro",
+      "valor": "100",
+      "data": "25/9/2021",
+      "id": 7
+    },
+    {
+      "transaccion": "retiro",
+      "valor": "100",
+      "data": "25/9/2021",
+      "id": 8
     }
   ]
 }
