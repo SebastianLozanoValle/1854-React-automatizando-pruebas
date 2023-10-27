@@ -1,6 +1,6 @@
 {
   "cuenta": {
-    "saldo": 1000
+    "saldo": 900
   },
   "transacciones": [
     {
@@ -14,6 +14,12 @@
       "valor": "200",
       "data": "25/09/2021",
       "id": 2
+    },
+    {
+      "transaccion": "retiro",
+      "valor": "100",
+      "data": "25/10/2023",
+      "id": 3
     }
   ]
 }
